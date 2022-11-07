@@ -1,24 +1,10 @@
-<xs:schema>
-  <xs:element name="coverage">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="file" minOccurs="0" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="lineToCover" minOccurs="0" maxOccurs="unbounded">
-                <xs:complexType>
-                  <xs:attribute name="lineNumber" type="xs:positiveInteger" use="required"/>
-                  <xs:attribute name="covered" type="xs:boolean" use="required"/>
-                  <xs:attribute name="branchesToCover" type="xs:nonNegativeInteger"/>
-                  <xs:attribute name="coveredBranches" type="xs:nonNegativeInteger"/>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          <xs:attribute name="path" type="xs:string" use="required"/>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-      <xs:attribute name="version" type="xs:positiveInteger" use="required"/>
-    </xs:complexType>
-  </xs:element>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="coverage">
+    <xs:attribute default="01p5g00000igNGOAA2" name="id" type="xs:string"/>
+    <xs:attribute default="Temperature" name="name" type="xs:string"/>
+    <xs:attribute default="3" name="totalLines" type="xs:string"/>
+    <xs:attribute default="[object Object]" name="lines" type="xs:string"/>
+    <xs:attribute default="3" name="totalCovered" type="xs:string"/>
+    <xs:attribute default="100" name="coveredPercent" type="xs:string"/>
+</xs:element>
 </xs:schema>
