@@ -1,8 +1,9 @@
-<xs:element name="coverage">
-    <xs:attribute default="01p5g00000igNGOAA2" name="id" type="xs:string"/>
-    <xs:attribute default="Temperature" name="name" type="xs:string"/>
-    <xs:attribute default="3" name="totalLines" type="xs:string"/>
-    <xs:attribute default="[object Object]" name="lines" type="xs:string"/>
-    <xs:attribute default="3" name="totalCovered" type="xs:string"/>
-    <xs:attribute default="100" name="coveredPercent" type="xs:string"/>
-</xs:element>
+<coverage version="1">
+  <file path="xources/hello/NoConditions.xoo">
+    <lineToCover lineNumber="6" covered="true"/>
+    <lineToCover lineNumber="7" covered="false"/>
+  </file>
+  <file path="xources/hello/WithConditions.xoo">
+    <lineToCover lineNumber="3" covered="true" branchesToCover="2" coveredBranches="1"/>
+  </file>
+</coverage>
